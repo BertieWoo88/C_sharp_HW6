@@ -10,7 +10,9 @@ double k2 = asknum("k2");
 
 double[] crospoint = getcross(b1, k1, b2, k2);
 
-Console.WriteLine($"точка пересечения графиков {k1}*X + {b1} и {k2}*X + {b2} -> ({String.Join(", ", crospoint)}) ");
+if (k1!=k2) 
+{Console.WriteLine($"точка пересечения графиков {k1}*X + {b1} и {k2}*X + {b2} -> ({String.Join(", ", crospoint)}) ");}
+else Console.WriteLine ("Прямые не пересекаются");
 
 double asknum(string name)
 {
